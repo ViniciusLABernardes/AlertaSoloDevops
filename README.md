@@ -6,8 +6,17 @@ Projeto de API RESTful para gerenciamento de sensores instalados em áreas de ri
 ## Link do video:
 https://youtu.be/r7pXj45B4uk
 
-## Integrantes:
+## Tutorial para rodar:
+- 1 - cole o comando de execução do container com mysql e execute no terminal:
+- - docker run -d --name mysql_container -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=alertasolodb -e MYSQL_USER=alertauser -e MYSQL_PASSWORD=senha123 -p 3306:3306 -v mysql_data:/var/lib/mysql mysql:8.0
+- 2 - execute este comando:
+- - docker build -t alertasolo .
+- 3 - cole o comando de execução do container com a api e execute no terminal:
+- - docker run -d --name api_java_container --network minha-rede -p 8080:8080 -e MYSQL_URL=jdbc:mysql://mysql_container:3306/alertasolodb alertasolo
+- 4 - com os dois containers rodando, você agora pode testar as requisições como estão abaixo do topico entidades do projeto.
+    
 
+## Integrantes:
 
 # Integrantes:
  - Vinicius Leandro de Araujo Bernardes RM554728 TURMA 2TDSPY
