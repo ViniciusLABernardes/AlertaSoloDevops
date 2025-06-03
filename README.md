@@ -2,6 +2,10 @@
 
 Projeto de API RESTful para gerenciamento de sensores instalados em áreas de risco de deslizamento de terra. Sensores como ESP32 monitoram variáveis ambientais e auxiliam na detecção de possíveis desastres naturais.
 
+
+## Link do video:
+https://youtu.be/r7pXj45B4uk
+
 ## Integrantes:
 
 
